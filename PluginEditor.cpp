@@ -19,14 +19,10 @@ TapSynthAudioProcessorEditor::TapSynthAudioProcessorEditor (TapSynthAudioProcess
     addAndMakeVisible (osc1);
     addAndMakeVisible (osc2);
     addAndMakeVisible(adsr);
-   //addAndMakeVisible(a);
-   //addAndMakeVisible(d);
-   //addAndMakeVisible(s);
-   //addAndMakeVisible(r);
     addAndMakeVisible (filter);
     addAndMakeVisible(horizontalMeterL);
     addAndMakeVisible(horizontalMeterR);
-    //addAndMakeVisible(&adsrG);
+    
     
 
     getLookAndFeel().setColour(juce::Slider::thumbColourId, juce::Colours::deepskyblue);
@@ -38,8 +34,7 @@ TapSynthAudioProcessorEditor::TapSynthAudioProcessorEditor (TapSynthAudioProcess
     s.addListener(this); 
     r.addListener(this);  
 
-   // adsrG.setMaxes(55, 60, 60);
-
+  
     logo = juce::ImageCache::getFromMemory(BinaryData::WhatsApp_Image_20240223_at_14_11_45_4ad02145removebgpreview_png, BinaryData::WhatsApp_Image_20240223_at_14_11_45_4ad02145removebgpreview_pngSize);
     logoComponent.setImage(logo);
     addAndMakeVisible(logoComponent);
